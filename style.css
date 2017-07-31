@@ -1,0 +1,1041 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+ul, li {
+  list-style: none;
+}
+div {
+  overflow: visible;
+}
+#main-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  perspective: 103.5825vh;
+  background-image: url('rimages/wallpaper/robot-31.png');
+  background-size: cover;
+  background-position: bottom center;
+}
+  #horn-1 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: auto;
+    position: absolute;
+    top: 20vh;
+    height: 10vh;
+    width: 17%;
+    transform: translateX(-70vh);
+    pointer-events: none;
+  }
+    #horn-2 {
+      overflow: visible;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: column;
+      width: 22.3vh;
+      height: 39.46vh;
+      transform: translateY(100%);
+      background-image: url('rimages/furnace/chimney-top.png');
+      background-size: contain;
+      background-position: top;
+      background-repeat: no-repeat;
+    }
+      #furnace {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: visible;
+        width: 29.595vh;
+        height: 39.46vh;
+        transform: translateY(50%);
+        background-image: url('rimages/furnace/furnace-HD31.png');
+        background-size: contain;
+        background-position: right;
+        background-repeat: no-repeat;
+      }
+        #furnace-tube {
+          position: absolute;
+          width: 0px;
+          height: 5.8vh;
+          top: 14.797vh;
+          left: 28.115vh;
+          transition: width 1.2s linear;
+          background-image: url('rimages/furnace/pipe-4k3.png');
+          background-size: cover;
+          background-position: right;
+        }
+        #furnace-door {
+          width: 17.757vh;
+          height: 9.371vh;
+          perspective: 98.65vh;
+          transform: translateY(-0.789vh) translateX(1.479vh);
+          background-image: url('rimages/furnace/furnace-door-HD3.png');
+          background-size: cover;
+          background-position: right;
+        }
+          #coal-2 {
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 9.865vh;
+            height: 9.865vh;
+            transform-style: preserve-3d;
+            background-image: url('rimages/furnace/coal-HD.png');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+          }
+          .coal-2-animation {
+            animation: coal2 3s linear 1 forwards;
+          }
+          @keyframes coal2 {
+            0% {transform: translateZ(0) rotate(0);}
+            100% {transform: translateZ(-1479vh) rotate(400deg);}
+          }
+  #cube-container {
+    height: 29.595vh;
+    width: 39.46vh;
+    top: 12vh;
+    /*top: 9.865vh;*/
+    margin: 0 auto;
+    position: absolute;
+    perspective: 100vh;
+    transform: translateY(98.65vh);
+    transition: transform 2s linear;
+  }
+    #cube {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      transform-origin: center;
+      transform-style: preserve-3d;
+      transition: transform 0.12s linear;
+      transition-property: none;
+    }
+      #cube div {
+        font-size: 18em;
+        margin: 0;
+        display: flex;
+        position: absolute;
+      }
+      /*// * 0.75 pt dreptunghi*/
+      /*translate /2*/
+      #cube #front {
+        width: 38.6708vh;
+        height: 29.003vh;
+        transform: rotateY(0deg) translateZ(14.501vh);
+        /*50% din cube div*/
+        background-color: darkgray;
+        cursor: pointer;
+      }
+        #front-content {
+          width: 100%;
+          height: 100%;
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+          pointer-events: all;
+        }
+        #front-bk {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-image: url('rimages/head/tv-face333.png');
+          background-size: cover;
+          background-position: center;
+          pointer-events: none;
+        }
+      #cube #back {
+        width: 38.6708vh;
+        height: 29.003vh;
+        transform: rotateX(180deg)
+        translateZ(14.501vh);
+        background-color: black;
+        background-image: url('rimages/rust/rust33.jpg');
+        background-size: cover;
+        background-position: center;
+      }
+      #cube #right {
+        width: 29.003vh;
+        height: 29.003vh;
+        transform: rotateY(90deg)
+        translateZ(19.335vh);
+        background-image: url('rimages/rust/rust33.jpg');
+        background-size: cover;
+        background-position: center;
+      }
+      #right-ear-right {
+        transform-style: preserve-3d;
+        transform-origin: right;
+        transform: rotateY(90deg)
+        translateZ(19.335vh) translateX(4.83385vh);
+        height: 9.865vh;
+        width: 9.865vh;
+        background-image: url('rimages/head/ear-HD.png');
+        background-size: cover;
+        background-position: center;
+      }
+        .rust-bk {
+          background-image: url('rimages/rust/rust33.jpg');
+          background-size: cover;
+          background-position: center;
+        }
+        .ear-front {
+          transform-style: preserve-3d;
+          transform-origin: right;
+          transform: rotateY(90deg)
+          translateX(4.9325vh)
+          translateY(2.466vh)
+          translateZ(4.9325vh);
+          height: 4.9325vh;
+          width: 4.9325vh;
+        }
+          .ear-front-top {
+            transform-origin: top;
+            transform: rotateX(60deg)
+            translateY(-5.919vh);
+            height: 5.919vh;
+            width: 4.9325vh;
+          }
+          .ear-front-bottom {
+            transform-origin: top;
+            transform: translateY(4.9325vh) rotateX(-60deg) ;
+            height: 5.919vh;
+            width: 4.9325vh;
+          }
+        .ear-back {
+          transform-style: preserve-3d;
+          transform-origin: right;
+          transform: rotateY(90deg)
+          translateX(4.9325vh)
+          translateY(2.46625vh)
+          translateZ(-4.9325vh);
+          height: 4.9325vh;
+          width: 4.9325vh;
+        }
+          .ear-back-top {
+            transform-origin: top;
+            transform: rotateX(-60deg)
+            translateY(-5.919vh);
+            height: 5.919vh;
+            width: 4.9325vh;
+
+          }
+          .ear-back-bottom {
+            transform-origin: top;
+            transform:translateY(4.9325vh) rotateX(60deg);
+            height: 5.919vh;
+            width: 4.9325vh;
+          }
+      #cube #left {
+        width: 29.003vh;
+        height: 29.003vh;
+        transform: rotateY(-90deg)
+        translateZ(19.335vh);
+        background-image: url('rimages/rust/rust33.jpg');
+        background-size: cover;
+        background-position: center;
+        transform-style: preserve-3d;
+      }
+      #left-ear-left {
+        transform-style: preserve-3d;
+        transform-origin: left;
+        transform: rotateY(-90deg)
+        translateZ(19.335vh) translateX(-4.833vh);
+        height: 9.865vh;
+        width: 9.865vh;
+        background-image: url('rimages/head/ear-HD.png');
+        background-size: cover;
+        background-position: center;
+      }
+      #cube #top {
+        width: 38.6708vh;
+        height: 29.003vh;
+        transform: rotateX(90deg)
+        translateZ(14.501vh);
+        background-image: url('rimages/rust/rust33.jpg');
+        background-size: cover;
+        background-position: center;
+      }
+      #cube #bottom {
+        width: 38.6708vh;
+        height: 29.003vh;
+        transform: rotateX(-90deg)
+        translateZ(14.501vh);
+        background-image: url('rimages/rust/rust33.jpg');
+        background-size: cover;
+        background-position: center;
+      }
+  #center {
+    position: absolute;
+    height: 0.0001vh;
+    width: 0.0001vh;
+    top: 4.932835vh;
+    left: 50%;
+    transition: top 2s linear;
+  }
+  #robot-container {
+    position: absolute;
+    height: 50.35vh;
+    width: 59.19vh;
+    top: 55vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    pointer-events: none;
+    background-image: url('rimages/robot/barrel-HD.png');
+    background-size: cover;
+    background-position: center;
+    transform: translateY(98.65vh);
+    transition: transform 2s linear;
+  }
+  #upper-body {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 10%;
+    width: 100%;
+  }
+    #arm-right-container {
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: row;
+      align-items: flex-start;
+      height: 100%;
+      width: 20%;
+    }
+      #right-shoulder {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-image: url('rimages/robot/shoulder-4K33.jpg');
+        background-size: cover;
+        height: 9.865vh;
+        width: 9.865vh;
+        transform: translateX(20%) translateY(-60%) rotate(0deg);
+        transform-origin: center;
+
+      }
+      .right-shoulder-animation {
+        animation: right-shoulder 0.75s linear;
+      }
+      @keyframes right-shoulder {
+        0% {transform:  translateX(20%) translateY(-60%) rotate(-120deg);}
+        16.6% {transform:  translateX(20%) translateY(-60%) rotate(-130deg);}
+        49.8% {transform:  translateX(20%) translateY(-60%) rotate(-110deg);}
+        83.5% {transform:  translateX(20%) translateY(-60%) rotate(-130deg);}
+        100% {transform:  translateX(20%) translateY(-60%) rotate(-120deg);}
+      }
+        #arm-right {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row;
+          height: 24.9325vh;
+          width: 1.973vh;
+          transform: translateY(70%);
+          background-image: url('rimages/robot/arm-4K33.png');
+          background-size: cover;
+          background-position: center;
+          transform-origin: top;
+        }
+        /*CALCULATE right-forearm / arm-right = translateY*/
+          #right-forearm {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex-flow: column;
+            overflow: visible;
+            height: 27.12875vh;
+            width: 1.973vh;
+            background-color: darkblue;
+            transform: translateY(90%) rotate(0deg);
+            transform-origin: top;
+            perspective: 98.65vh;
+            background-image: url('rimages/robot/arm-4K33.png');
+            background-size: cover;
+            background-position: center;
+          }
+          .right-forearm-animation {
+            animation: right-forearm 0.75s linear;
+          }
+          @keyframes right-forearm {
+            0% {transform: translateY(90%) rotate(30deg);}
+            16.6% {transform: translateY(90%) rotate(40deg);}
+            49.8% {transform: translateY(90%) rotate(20deg);}
+            83.5% {transform: translateY(90%) rotate(40deg);}
+            100% {transform: translateY(90%) rotate(30deg);}
+          }
+            #right-elbow {
+              width: 5.919vh;
+              height: 5.919vh;
+              border-radius: 50%;
+              background-image: url('rimages/robot/elbow-4K33.jpg');
+              background-size: cover;
+              background-position: center;
+              transform: translateY(-290%);
+            }
+            #right-hand {
+              display: flex;
+              flex-direction: column;
+              flex-flow: row;
+              justify-content: space-around;
+              align-items: flex-end;
+              width: 6.9055vh;
+              height: 6.9055vh;
+              border-top-left-radius: 25%;
+              border-top-right-radius: 25%;
+              /*background-color: orange;*/
+              transform: translateY(50%) rotateY(180deg) rotate(0deg);
+              background-image: url('rimages/robot/hand-4K33.jpg');
+              background-size: cover;
+              background-position: center;
+              /*border-radius: 50%;*/
+            }
+            .right-hand-animation {
+              animation: right-hand 0.75s linear;
+            }
+            @keyframes right-hand {
+              0% {transform: translateY(50%) rotateY(180deg) rotate(-90deg);}
+              16.6%{transform: translateY(50%) rotateY(180deg) rotate(-100deg);}
+              49.8%{transform: translateY(50%) rotateY(180deg) rotate(-80deg);}
+              83.5%{transform: translateY(50%) rotateY(180deg) rotate(-100deg);}
+              100% {transform: translateY(50%) rotateY(180deg) rotate(-90deg);}
+            }
+            /*right hand height ~*0.7 */
+              .right-finger {
+                background-color: darkblue;
+                width: 0.9865;
+                height: 4.735vh;
+                display: flex;
+                justify-content: center;
+                transition: transform 2s;
+                background-image: url('rimages/robot/hand-4K33.jpg');
+                background-size: cover;
+                background-position: center;
+
+              }
+              #right-finger-1 {
+                transform: translateY(100%) translateX(0%);
+              }
+              #right-finger-2 {
+                transform: translateY(100%) translateX(30%);
+              }
+              #right-finger-3 {
+                transform: translateY(100%) translateX(60%);
+              }
+              #right-finger-4 {
+                transform: translateY(100%) translateX(90%);
+              }
+            /*iei pt fiecare 10% din height right finer --->
+            adaugi 10% in translate Y*/
+                .right-finger-2 {
+                  background-color: red;
+                  width: 0.7398vh;
+                  transition: transform 2s;
+                  background-image: url('rimages/robot/hand-4K33.jpg');
+                  background-size: cover;
+                  background-position: left;
+                }
+                #right-finger-2-1 {
+                transform: translateY(130%);
+                height: 3.5514vh;
+                }
+                #right-finger-2-2 {
+                transform: translateY(130%);
+                height: 3.5514vh;
+                }
+                #right-finger-2-3 {
+                transform: translateY(130%);
+                height: 3.5514vh;
+                }
+                #right-finger-2-4 {
+                transform: translateY(130%);
+                height: 3.5514vh;
+                }
+
+            .drop-menu {
+              cursor: pointer;
+              pointer-events: all;
+              font-family: 'Sancreek', cursive;
+            }
+            .drop-menu p {
+              font-size: 2.4vh;
+              text-shadow:
+              0px 0px 0.5vh white,
+              0px 0px 1vh beige,
+              0px 0px 2vh beige,
+              0px 0px 2vh beige,
+              0px 0px 2vh beige,
+              0px 0px 2vh beige,
+              0px 0px 2vh beige,
+              0px 0px 2vh beige,
+              0px 0px 2vh orange,
+              0px 0px 2vh orange,
+              0px 0px 3vh orange,
+              0px 0px 3vh orange,
+              0px 0px 4vh orange,
+              0px 0px 4vh orange;
+
+            }
+
+              .blur {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: white;
+                pointer-events: none;
+                transition: opacity 0.2s linear;
+              }
+                .blur p {
+                  pointer-events: none;
+                }
+          .rope {
+            pointer-events: none;
+          }
+              #drop-menu-txt-1,
+              #drop-menu-txt-2,
+              #drop-menu-txt-3,
+              #drop-menu-txt-4 {
+                display: block;
+              }
+              #drop-menu-txt-1-1,
+              #drop-menu-txt-2-2,
+              #drop-menu-txt-3-3,
+              #drop-menu-txt-4-4 {
+                display: none;
+                pointer-events: none;
+              }
+                #drop-blur-1,
+                #drop-blur-2,
+                #drop-blur-3,
+                #drop-blur-4 {
+                  display: block;
+                }
+                #drop-blur-1-1,
+                #drop-blur-2-2,
+                #drop-blur-3-3,
+                #drop-blur-4-4 {
+                  display: none;
+                  pointer-events: none;
+                }
+          #rope-1 {
+            background-image: url('rimages/robot/wire-1-333.png');
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            display: flex;
+            flex-direction: column;
+            flex-flow: column;
+            justify-content: flex-end;
+            align-items: center;
+            width: 0.7892vh;
+            height: 7.892vh;
+            /*translate x ~650%*/
+            transform-origin: top;
+            transform: translateY(200%) translateX(-3.206125vh);
+          }
+            #drop-menu-1 {
+              overflow: visible;
+              display: flex;
+              flex-direction: column;
+              flex-flow: row;
+              justify-content: center;
+              align-items: center;
+              width: 19.73vh;
+              height: 7.892vh;
+              background-image: url('rimages/robot/drop33.png');
+              background-size: cover;
+              background-position: center;
+              transform: translateY(100%);
+            }
+              #rope-2 {
+                background-image: url('rimages/robot/wire-1-333.png');
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                flex-direction: column;
+                flex-flow: column;
+                justify-content: flex-end;
+                align-items: center;
+                width: 0.7892vh;
+                height: 7.892vh;
+                transform: translateY(100%);
+              }
+                #drop-menu-2 {
+                  overflow: visible;
+                  display: flex;
+                  flex-direction: column;
+                  flex-flow: row;
+                  justify-content: center;
+                  align-items: center;
+                  width: 19.73vh;
+                  height: 7.892vh;
+                  background-image: url('rimages/robot/drop33.png');
+                  background-size: cover;
+                  background-position: center;
+                  transform: translateY(100%);
+                }
+                  #rope-3 {
+                    background-image: url('rimages/robot/wire-1-333.png');
+                    background-size: cover;
+                    background-position: center;
+                    display: flex;
+                    flex-flow: column;
+                    justify-content: flex-end;
+                    align-items: center;
+                    width: 0.7892vh;
+                    height: 7.892vh;
+                    transform: translateY(100%);
+                  }
+                    #drop-menu-3 {
+                      overflow: visible;
+                      display: flex;
+                      flex-direction: column;
+                      flex-flow: row;
+                      justify-content: center;
+                      align-items: center;
+                      width: 19.73vh;
+                      height: 7.892vh;
+                      background-image: url('rimages/robot/drop33.png');
+                      background-size: cover;
+                      background-position: center;
+                      transform: translateY(100%);
+                    }
+                      #rope-4 {
+                        background-image: url('rimages/robot/wire-1-333.png');
+                        background-size: cover;
+                        background-position: center;
+                        display: flex;
+                        flex-flow: column;
+                        justify-content: flex-end;
+                        align-items: center;
+                        width: 0.7892vh;
+                        height: 7.892vh;
+                        transform: translateY(100%);
+                      }
+                        #drop-menu-4 {
+                          overflow: visible;
+                          display: flex;
+                          flex-direction: column;
+                          flex-flow: row;
+                          justify-content: center;
+                          align-items: center;
+                          width: 19.73vh;
+                          height: 7.892vh;
+                          background-image: url('rimages/robot/drop33.png');
+                          background-size: cover;
+                          background-position: center;
+                          transform: translateY(100%);
+                        }
+                        .drop-menu p {
+                          position: absolute;
+                          transform: rotateY(180deg);
+                        }
+      #neck-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        height: 100%;
+        width: 20%;
+      }
+        #neck {
+          height: 19.73vh;
+          width: 5.919vh;
+          transform: rotate(180deg);
+          transform-origin: top;
+          background-image: url('rimages/robot/arm-4K33.png');
+          background-size: cover;
+          background-position: center;
+        }
+      #arm-left-container {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        align-items: flex-start;
+        height: 100%;
+        width: 20%;
+        transform-origin: left;
+        perspective: 98.65vh;
+      }
+        #left-shoulder {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          background-image: url('rimages/robot/shoulder-4K33.jpg');
+          background-size: cover;
+          height: 9.865vh;
+          width: 9.865vh;
+          transform: translateX(-20%) translateY(-60%) rotate(0deg) ;
+          transform-origin: center;
+          perspective: 98.65vh;
+        }
+          #arm-left {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            height: 24.9325vh;
+            width: 1.973vh;
+            transform: translateY(69.5%);
+            background-image: url('rimages/robot/arm-4K33.png');
+            background-size: cover;
+            background-position: center;
+            transform-origin: top;
+            z-index: -1;
+            perspective: 98.65vh;
+          }
+            /*CALCULATE right-forearm / arm-right = translateY*/
+            #left-forearm {
+              display: flex;
+              justify-content: flex-end;
+              align-items: center;
+              flex-flow: column;
+              overflow: visible;
+              height: 27.12875vh;
+              width: 1.973vh;
+              background-color: darkblue;
+              transform: translateY(90%) rotate(0deg);
+              transform-origin: top;
+              perspective: 98.65vh;
+              background-image: url('rimages/robot/arm-4K33.png');
+              background-size: cover;
+              background-position: center;
+            }
+              #left-elbow {
+                width: 5.919vh;
+                height: 5.919vh;
+                border-radius: 50%;
+                background-color: darkorange;
+                transform: translateY(-290%);
+                perspective: 98.65vh;
+                background-image: url('rimages/robot/elbow-4K33.jpg');
+                background-size: cover;
+                background-position: center;
+              }
+              #left-hand {
+                display: flex;
+                flex-direction: column;
+                flex-flow: row;
+                justify-content: space-around;
+                align-items: flex-end;
+                width: 6.9055vh;
+                height: 6.9055vh;
+                transform: translateY(50%) rotateY(0deg) rotate(0deg);
+                perspective: 98.65vh;
+                border-top-left-radius: 25%;
+                border-top-right-radius: 25%;
+                background-image: url('rimages/robot/hand-4K33.jpg');
+                background-size: cover;
+                background-position: center;
+              }
+                #coal {
+                  opacity: 0;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  height: 11.838vh;
+                  width: 11.838vh;
+                  transform-style: preserve-3d;
+                  transform:rotateY(0deg) translateX(0%);
+                  background-image: url('rimages/furnace/coal-HD.png');
+                  background-size: contain;
+                  background-position: center;
+                  background-repeat: no-repeat;
+                }
+              /*right hand height ~*0.7 */
+                .left-finger {
+                  background-color: darkblue;
+                  width: 0.9865vh;
+                  height: 4.735vh;
+                  display: flex;
+                  justify-content: center;
+                  transition: transform 2s;
+                  background-image: url('rimages/robot/hand-4K33.jpg');
+                  background-size: cover;
+                  background-position: center;
+                }
+                #left-finger-1 {
+                  transform: translateY(100%) translateX(0%);
+                }
+                #left-finger-2 {
+                  transform: translateY(100%) translateX(15%);
+                }
+                #left-finger-3 {
+                  transform: translateY(100%) translateX(30%);
+                }
+                #left-finger-4 {
+                  transform: translateY(100%) translateX(45%);
+                }
+              /*iei pt fiecare 10% din height left finer ---> adaugi 10% in translate Y*/
+                  .left-finger-2 {
+                    background-color: red;
+                    width: 0.7398vh;
+                    height: 3.5514vh;
+                    background-image: url('rimages/robot/hand-4K33.jpg');
+                    background-size: cover;
+                    background-position: left;
+                  }
+                  #left-finger-2-1 {
+                    transform: translateY(130%);
+                  }
+                  #left-finger-2-2 {
+                    transform: translateY(130%);
+                  }
+                  #left-finger-2-3 {
+                    transform: translateY(130%);
+                  }
+                  #left-finger-2-4 {
+                    transform: translateY(130%);
+                  }
+                  #left-finger-2-5 {
+                    transform: translateY(7.1028vh);
+                  }
+    #lower-body {
+    height: 90%;
+    width: 100%;
+    }
+      #heart-container {
+        position: absolute;
+        right: 14.9325vh;
+        top: 9.865vh;
+        width: 29.595vh;
+        height: 29.595vh;
+        background-color: lightgray;
+      }
+        #gear-1 {
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 9.865vh;
+          height: 9.865vh;
+          background-image: url('rimages/robot/gear-2.png');
+          background-size: cover;
+          animation: gear-1 12s infinite  linear;
+           animation-play-state: paused;
+        }
+
+        @keyframes gear-1 {
+          0% {transform: rotate(0deg);}
+          100% {transform: rotate(360deg);}
+        }
+        #gear-2 {
+          position: absolute;
+          top: 6.41225vh;
+          left: 6.41225vh;
+          width: 9.865vh;
+          height: 9.865vh;
+          background-image: url('rimages/robot/gear-1.png');
+          background-size: cover;
+          transform: rotate(-20deg);
+          animation: gear-2 12s infinite  linear;
+          animation-play-state: paused;
+        }
+        @keyframes gear-2 {
+          0% {transform: rotate(-20deg);}
+          100% {transform: rotate(-380deg);}
+        }
+        #gear-3 {
+          position: absolute;
+          top: 0px;
+          left: 12.3312vh;
+          width: 9.865vh;
+          height: 9.865vh;
+          background-image: url('rimages/robot/gear-2.png');
+          background-size: cover;
+          transform: rotate(20deg);
+          animation: gear-3 12s infinite  linear;
+          animation-play-state: paused;
+        }
+        @keyframes gear-3 {
+          0% {transform: rotate(20deg);}
+          100% {transform: rotate(380deg);}
+        }
+        #gear-4 {
+          position: absolute;
+          top: 12.8245vh;
+          left: 12.8245vh;
+          width: 9.865vh;
+          height: 9.865vh;
+          background-image: url('rimages/robot/gear-1.png');
+          background-size: cover;
+          animation: gear-4 12s infinite  linear;
+          animation-play-state: paused;
+        }
+        @keyframes gear-4 {
+          0% {transform: rotate(0deg);}
+          100% {transform: rotate(360deg);}
+        }
+        #gear-5 {
+          position: absolute;
+          top: 19.2367vh;
+          left: 6.41225vh;
+          width: 9.865vh;
+          height: 9.865vh;
+          background-image: url('rimages/robot/gear-2.png');
+          background-size: cover;
+          transform: rotate(-20deg);
+          animation: gear-5 12s infinite  linear;
+          animation-play-state: paused;
+        }
+        @keyframes gear-5 {
+          0% {transform: rotate(-20deg);}
+          100% {transform: rotate(-380deg);}
+        }
+        #gear-6 {
+          position: absolute;
+          top: 19.2367vh;
+          left: 19.2367vh;
+          width: 9.865vh;
+          height: 9.865vh;
+          background-image: url('rimages/robot/gear-2.png');
+          background-size: cover;
+          transform: rotate(-20deg);
+          animation: gear-6 12s infinite  linear;
+          animation-play-state: paused;
+        }
+        @keyframes gear-6 {
+          0% {transform: rotate(-20deg);}
+          100% {transform: rotate(-380deg);}
+        }
+        #heart {
+          position: absolute;
+          top: -0.1973vh;
+          left: -0.1973vh;
+          width: 29.9896vh;
+          height: 29.9896vh;
+          background-image: url('rimages/robot/circle-rusted-22.png');
+          background-size: cover;
+          background-repeat: no-repeat;
+
+        }
+#subtitle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 13vh;
+  pointer-events: none;
+  transform: rotateX(90deg);
+  transform-origin: top;
+  transition: transform 1s;
+}
+  .holder {
+    position: absolute;
+    background-size: cover;
+    background-position: top center;
+    height: 13vh;
+    width: 13vh;
+    background-image: url('rimages/wallpaper/text-left.png');
+  }
+    #holder-1 {
+      margin-left: -60vh;
+      top: 0;
+      left: 50%;
+      position: absolute;
+      background-size: cover;
+      height: 10vh;
+      width: 14vh;
+    }
+    #holder-2 {
+      transform: rotateY(180deg);
+      margin-right: -60vh;
+      top: 0;
+      right: 50%;
+      position: absolute;
+      background-size: cover;
+      height: 10vh;
+      width: 14vh;
+    }
+  #subtitle-content-container {
+    position: relative;
+    width: 98vh;
+    height: 9.9vh;
+    border-radius: 27%;
+    background-color: #361c17;
+    overflow: hidden;
+  }
+    .description-text {
+      display: none;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      left: 15vh;
+      color: white;
+      width: 100%;
+      height: 100%;
+    }
+      .description-text p {
+        font-size: 2.5vh;
+      }
+    #cover-txt-1,
+    #cover-txt-2,
+    #cover-txt-3 {
+      position: absolute;
+      width: 98vh;
+      height: 3.3vh;
+      background-color: #361c17;
+    }
+  #cover-txt-1 {
+    top: 0;
+  }
+  #cover-txt-2 {
+    top: 3.3vh;
+  }
+  #cover-txt-3 {
+    top: 6.6vh;
+  }
+
+#warning {
+  display: none;
+}
+@media  only screen and (max-width: 768px) {
+  #heart-container {
+    top: 9.8vh;
+  }
+}
+@media (pointer:coarse) and (orientation:portrait) {
+  #warning {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    font-size: 2em;
+    color: white;
+    font-family: 'Sancreek', cursive;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.85);
+  }
+}
