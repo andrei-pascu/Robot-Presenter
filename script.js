@@ -452,7 +452,7 @@ function createText() {
         window.open('https://www.facebook.com/andrei.pascu.393' , '_blank')
           .focus();
       } else if (link == 2) {
-        window.open ('deer/index.php' , '_blank').focus();
+        window.open ('https://andrei-pascu.github.io/deer/' , '_blank').focus();
       } else if  (link == 3)  {
         window.open('esports/index.php' , '_blank').focus();
       } else if  (link == 4)  {
