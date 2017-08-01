@@ -78,9 +78,16 @@ function createText() {
       'transition': 'transform 1s linear',
         'transform': 'rotateY(40deg) rotateX(-40deg)'+
           'translateZ(6.93vh) translateX(5vh)'});
-    $('#robot-container').css({
-      'transition': 'transform 1s linear',
-        'transform': 'rotateY(10deg) rotateX(-10deg) translateZ(4.932835vh)'});
+    if (navigator.userAgent.search("Safari") >= 0 && 
+    navigator.userAgent.search("Chrome") < 0) {
+      $('#robot-container').css({
+        'transition': 'transform 1s linear',
+          'transform': 'rotateY(10deg) rotateX(-10deg) translateZ(0vh)'});
+    } else {
+      $('#robot-container').css({
+        'transition': 'transform 1s linear',
+          'transform': 'rotateY(10deg) rotateX(-10deg) translateZ(4.93vh)'});
+    }
   }, 7000);
   setTimeout(function() {
 //Arm shacking animation
