@@ -1,7 +1,11 @@
-
+if (navigator.userAgent.search("Safari") >= 0 && 
+  navigator.userAgent.search("Chrome") < 0) {
+  $('#robot-container').css({'margin':'0 auto 0 38vw'});
+  $('#horn-1').css({'transform':'translateX(27vh)'});
+ }
 $(document).ready(function() {
 //For binding a link to  the Robot face
-    var link = 0;
+  var link = 0;
 //Initial tv 'channel'
 function firstTv() {
   $('#subtitle-content-container div').css({'display':'none'});
