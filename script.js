@@ -4,10 +4,10 @@ if (navigator.userAgent.search("Safari") >= 0 &&
   $('#horn-1').css({'transform':'translateX(15vw)'});
   $('.drop-menu p').css({'text-align':'center',
     'margin-right':'-50%',
-    'transform':'rotateY(180deg) translateX(100%) translateY(50%)'});
+    'transform':'rotateY(180deg) translateX(50%) translateY(50%)'});
   $('.blur').css({'text-align':'center',
     'margin-right':'-50%',
-     'transform':'rotateY(180deg) translateX(100%) translateY(50%)'});
+     'transform':'rotateY(180deg) translateX(-50%) translateY(-50%)'});
  }
 $(document).ready(function() {
 //For binding a link to  the Robot face
