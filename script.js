@@ -80,9 +80,6 @@ function createText() {
           'translateZ(6.93vh) translateX(5vh)'});
     if (navigator.userAgent.search("Safari") >= 0 && 
     navigator.userAgent.search("Chrome") < 0) {
-      $('#robot-container').css({
-        'transition': 'transform 1s linear',
-          'transform': 'rotateY(10deg) rotateX(-10deg) translateZ(0vh)'});
     } else {
       $('#robot-container').css({
         'transition': 'transform 1s linear',
