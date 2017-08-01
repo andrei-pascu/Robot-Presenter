@@ -7,7 +7,7 @@ if (navigator.userAgent.search("Safari") >= 0 &&
     'transform':'rotateY(180deg) translateX(50%) translateY(50%)'});
   $('.blur').css({'text-align':'center',
     'margin-right':'-50%',
-     'transform':'rotateY(180deg) translateX(-50%) translateY(-50%)'});
+     'transform':'rotateY(180deg)'});
  }
 $(document).ready(function() {
 //For binding a link to  the Robot face
