@@ -2,8 +2,10 @@ if (navigator.userAgent.search("Safari") >= 0 &&
   navigator.userAgent.search("Chrome") < 0) {
   $('#robot-container').css({'margin':'0 auto 0 32vw'});
   $('#horn-1').css({'transform':'translateX(15vw)'});
-  $('.drop-menu p').css({'text-align':'right'});
-  $('.blur').css({'text-align':'right'});
+  $('.drop-menu p').css({'text-align':'center',
+    'margin-right':'-50%'});
+  $('.blur').css({'text-align':'center',
+    'margin-right':'-50%'});
  }
 $(document).ready(function() {
 //For binding a link to  the Robot face
