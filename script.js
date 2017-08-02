@@ -468,7 +468,7 @@ function createText() {
       } else if (link == 2) {
         window.open ('https://andrei-pascu.github.io/deer/' , '_blank').focus();
       } else if  (link == 3)  {
-        window.open('esports/index.php' , '_blank').focus();
+        window.open('https://pascu-esports.herokuapp.com/' , '_blank').focus();
       } else if  (link == 4)  {
         // window.open('' , '_blank').focus();
       } else if  (link == 5)  {
