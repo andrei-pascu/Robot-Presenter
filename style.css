@@ -125,6 +125,19 @@ div {
       transition: transform 0.12s linear;
       transition-property: none;
     }
+#cube #back,
+#cube #left,
+#cube #right,
+#cube #top,
+#cube #bottom,
+.ear-front,
+.ear-front-top,
+.ear-front-bottom,
+.ear-back,
+.ear-back-top,
+.ear-back-bottom {
+  background-color: rgba(48, 16, 1, 0.97);
+}
       #cube div {
         font-size: 18em;
         margin: 0;
@@ -673,6 +686,7 @@ div {
           background-image: url('rimages/robot/arm-4K33.png');
           background-size: cover;
           background-position: center;
+          background-color: rgba(48, 16, 1, 0.97);
         }
       #arm-left-container {
         display: flex;
