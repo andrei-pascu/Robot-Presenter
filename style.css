@@ -19,7 +19,7 @@ div {
   height: 100vh;
   overflow: hidden;
   perspective: 103.5825vh;
-  background-image: url('rimages/wallpaper/robot-31.jpg');
+  background-image: url('rimages/wallpaper/robot-31.png');
   background-size: cover;
   background-position: bottom center;
 }
@@ -107,19 +107,19 @@ div {
     width: 39.46vh;
     top: 12vh;
     /*top: 9.865vh;*/
-    margin: 12.1vh auto 0 auto;
-/*     position: absolute; */
+    margin: 0 auto;
+    position: absolute;
     perspective: 100vh;
     transform: translateY(98.65vh);
     transition: transform 2s linear;
   }
     #cube {
-/*       display: flex;
+      display: flex;
       align-items: center;
-      justify-content: center; */
+      justify-content: center;
       width: 100%;
       height: 100%;
-/*       position: absolute; */
+      position: absolute;
       transform-origin: center;
       transform-style: preserve-3d;
       transition: transform 0.12s linear;
@@ -128,7 +128,7 @@ div {
       #cube div {
         font-size: 18em;
         margin: 0;
-/*         display: flex; */
+        display: flex;
         position: absolute;
       }
       /*// * 0.75 pt dreptunghi*/
@@ -174,7 +174,7 @@ div {
         width: 29.003vh;
         height: 29.003vh;
         transform: rotateY(90deg)
-        translateZ(24.15vh);
+        translateZ(19.335vh);
         background-image: url('rimages/rust/rust33.jpg');
         background-size: cover;
         background-position: center;
@@ -183,9 +183,7 @@ div {
         transform-style: preserve-3d;
         transform-origin: right;
         transform: rotateY(90deg)
-          translateZ(33.8vh)
-          translateX(4.83385vh)
-          translateY(9.7vh);
+        translateZ(19.335vh) translateX(4.83385vh);
         height: 9.865vh;
         width: 9.865vh;
         background-image: url('rimages/head/ear-HD.png');
@@ -248,7 +246,7 @@ div {
         width: 29.003vh;
         height: 29.003vh;
         transform: rotateY(-90deg)
-        translateZ(14.5vh);
+        translateZ(19.335vh);
         background-image: url('rimages/rust/rust33.jpg');
         background-size: cover;
         background-position: center;
@@ -258,9 +256,7 @@ div {
         transform-style: preserve-3d;
         transform-origin: left;
         transform: rotateY(-90deg)
-          translateZ(4.7vh) 
-          translateX(-4.833vh) 
-          translateY(9.7vh);
+        translateZ(19.335vh) translateX(-4.833vh);
         height: 9.865vh;
         width: 9.865vh;
         background-image: url('rimages/head/ear-HD.png');
@@ -287,9 +283,9 @@ div {
       }
   #center {
     position: absolute;
-    height: 1vh;
-    width: 1vh;
-    top: 4.945vh;
+    height: 0.0001vh;
+    width: 0.0001vh;
+    top: 4.932835vh;
     left: 50%;
     transition: top 2s linear;
   }
@@ -299,10 +295,10 @@ div {
     width: 59.19vh;
     top: 55vh;
     margin: 0 auto;
-/*     display: flex;
+    display: flex;
     align-items: center;
     justify-content: flex-start;
-    flex-direction: column; */
+    flex-direction: column;
     pointer-events: none;
     background-image: url('rimages/robot/barrel-HD.png');
     background-size: cover;
@@ -331,6 +327,7 @@ div {
         justify-content: center;
         border-radius: 50%;
         background-image: url('rimages/robot/shoulder-4K33.jpg');
+        background-color: rgba(48, 16, 1, 0.97);
         background-size: cover;
         height: 9.865vh;
         width: 9.865vh;
@@ -356,6 +353,7 @@ div {
           width: 1.973vh;
           transform: translateY(70%);
           background-image: url('rimages/robot/arm-4K33.png');
+          background-color: rgba(48, 16, 1, 0.97);
           background-size: cover;
           background-position: center;
           transform-origin: top;
@@ -369,7 +367,7 @@ div {
             overflow: visible;
             height: 27.12875vh;
             width: 1.973vh;
-            background-color: darkblue;
+            background-color: rgba(48, 16, 1, 0.97);
             transform: translateY(90%) rotate(0deg);
             transform-origin: top;
             perspective: 98.65vh;
@@ -392,6 +390,7 @@ div {
               height: 5.919vh;
               border-radius: 50%;
               background-image: url('rimages/robot/elbow-4K33.jpg');
+              background-color: rgba(48, 16, 1, 0.97);
               background-size: cover;
               background-position: center;
               transform: translateY(-290%);
@@ -425,7 +424,7 @@ div {
             }
             /*right hand height ~*0.7 */
               .right-finger {
-                background-color: darkblue;
+                background-color: rgba(48, 16, 1, 0.97);
                 width: 0.9865;
                 height: 4.735vh;
                 display: flex;
@@ -451,7 +450,7 @@ div {
             /*iei pt fiecare 10% din height right finer --->
             adaugi 10% in translate Y*/
                 .right-finger-2 {
-                  background-color: red;
+                  background-color: rgba(48, 16, 1, 0.97);
                   width: 0.7398vh;
                   transition: transform 2s;
                   background-image: url('rimages/robot/hand-4K33.jpg');
@@ -691,6 +690,7 @@ div {
           justify-content: center;
           border-radius: 50%;
           background-image: url('rimages/robot/shoulder-4K33.jpg');
+          background-color: rgba(48, 16, 1, 0.97);
           background-size: cover;
           height: 9.865vh;
           width: 9.865vh;
@@ -706,6 +706,7 @@ div {
             width: 1.973vh;
             transform: translateY(69.5%);
             background-image: url('rimages/robot/arm-4K33.png');
+            background-color: rgba(48, 16, 1, 0.97);
             background-size: cover;
             background-position: center;
             transform-origin: top;
@@ -721,7 +722,7 @@ div {
               overflow: visible;
               height: 27.12875vh;
               width: 1.973vh;
-              background-color: darkblue;
+              background-color: rgba(48, 16, 1, 0.97);
               transform: translateY(90%) rotate(0deg);
               transform-origin: top;
               perspective: 98.65vh;
@@ -733,7 +734,7 @@ div {
                 width: 5.919vh;
                 height: 5.919vh;
                 border-radius: 50%;
-                background-color: darkorange;
+                background-color: rgba(48, 16, 1, 0.97);
                 transform: translateY(-290%);
                 perspective: 98.65vh;
                 background-image: url('rimages/robot/elbow-4K33.jpg');
@@ -772,7 +773,7 @@ div {
                 }
               /*right hand height ~*0.7 */
                 .left-finger {
-                  background-color: darkblue;
+                  background-color: rgba(48, 16, 1, 0.97);
                   width: 0.9865vh;
                   height: 4.735vh;
                   display: flex;
@@ -796,7 +797,7 @@ div {
                 }
               /*iei pt fiecare 10% din height left finer ---> adaugi 10% in translate Y*/
                   .left-finger-2 {
-                    background-color: red;
+                    background-color: rgba(48, 16, 1, 0.97);
                     width: 0.7398vh;
                     height: 3.5514vh;
                     background-image: url('rimages/robot/hand-4K33.jpg');
