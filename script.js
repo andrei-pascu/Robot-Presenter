@@ -1,17 +1,7 @@
-if (navigator.userAgent.search("Safari") >= 0 && 
-  navigator.userAgent.search("Chrome") < 0) {
-  $('#robot-container').css({'margin':'0 auto 0 32vw'});
-  $('#horn-1').css({'transform':'translateX(5vw)'});
-  $('.drop-menu p').css({'text-align':'center',
-    'margin-right':'-50%',
-    'transform':'rotateY(180deg) translateX(50%) translateY(50%)'});
-  $('.blur').css({'text-align':'center',
-    'margin-right':'-50%',
-     'transform':'rotateY(180deg)'});
- }
+
 $(document).ready(function() {
 //For binding a link to  the Robot face
-  var link = 0;
+    var link = 0;
 //Initial tv 'channel'
 function firstTv() {
   $('#subtitle-content-container div').css({'display':'none'});
@@ -78,13 +68,9 @@ function createText() {
       'transition': 'transform 1s linear',
         'transform': 'rotateY(40deg) rotateX(-40deg)'+
           'translateZ(6.93vh) translateX(5vh)'});
-    if (navigator.userAgent.search("Safari") >= 0 && 
-    navigator.userAgent.search("Chrome") < 0) {
-    } else {
-      $('#robot-container').css({
-        'transition': 'transform 1s linear',
-          'transform': 'rotateY(10deg) rotateX(-10deg) translateZ(4.93vh)'});
-    }
+    $('#robot-container').css({
+      'transition': 'transform 1s linear',
+        'transform': 'rotateY(10deg) rotateX(-10deg) translateZ(4.932835vh)'});
   }, 7000);
   setTimeout(function() {
 //Arm shacking animation
@@ -463,16 +449,16 @@ function createText() {
 //Links that open onClick Robot face in a new tab
     $('#front-content').click(function() {
       if (link == 1) {
-        window.open('https://www.facebook.com/andrei.pascu.393' , '_blank')
+        window.open('https://github.com/andrei-pascu' , '_blank')
           .focus();
       } else if (link == 2) {
-        window.open ('https://andrei-pascu.github.io/deer/' , '_blank').focus();
+        window.open ('deer/index.php' , '_blank').focus();
       } else if  (link == 3)  {
-        window.open('https://pascu-esports.herokuapp.com/' , '_blank').focus();
+        window.open('esports/index.php' , '_blank').focus();
       } else if  (link == 4)  {
         // window.open('' , '_blank').focus();
       } else if  (link == 5)  {
-        window.open('https://andrei-pascu.github.io/anti-mosquito/' , '_blank').focus();
+        window.open('mosquito/index.html' , '_blank').focus();
       } else if  (link == 6)  {
         window.open('' , '_blank').focus();
       } else if  (link == 7)  {
