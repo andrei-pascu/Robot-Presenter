@@ -452,13 +452,13 @@ function createText() {
         window.open('https://github.com/andrei-pascu' , '_blank')
           .focus();
       } else if (link == 2) {
-        window.open ('deer/index.php' , '_blank').focus();
+        window.open ('https://andrei-pascu.github.io/deer/' , '_blank').focus();
       } else if  (link == 3)  {
-        window.open('esports/index.php' , '_blank').focus();
+        window.open('https://pascu-esports.herokuapp.com/' , '_blank').focus();
       } else if  (link == 4)  {
         // window.open('' , '_blank').focus();
       } else if  (link == 5)  {
-        window.open('mosquito/index.html' , '_blank').focus();
+        window.open('https://andrei-pascu.github.io/anti-mosquito/' , '_blank').focus();
       } else if  (link == 6)  {
         window.open('' , '_blank').focus();
       } else if  (link == 7)  {
