@@ -452,7 +452,7 @@ function createText() {
         window.open('https://github.com/andrei-pascu' , '_blank')
           .focus();
       } else if (link == 2) {
-        window.open ('https://andrei-pascu.github.io/deer/' , '_blank').focus();
+        window.open ('https://andrei-pascu.github.io/The-Bored-Deer/' , '_blank').focus();
       } else if  (link == 3)  {
         window.open('https://pascu-esports.herokuapp.com/' , '_blank').focus();
       } else if  (link == 4)  {
