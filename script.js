@@ -310,7 +310,7 @@ function createText() {
               link = 3;
               e.stopPropagation();
               $('#front-content').css({
-                'background-image': 'url(rimages/head/esports.jpg)',
+                'background-image': 'url(rimages/head/thor-cv.png)',
                 'background-size': 'contain'});
         } else  if ($(e.target).is('#drop-menu-4') ||
             $(e.target).is('#drop-menu-txt-4'))  {
@@ -379,12 +379,12 @@ function createText() {
                 'background-size': 'contain'});
           } else  if ($(e.target).is('#drop-menu-2')) {
             $('#subtitle-content-container div').css({'display':'none'});
-            $('#construction').css({'display':'flex'});
+            $('#esportActual').css({'display':'flex'});
             createText();
             link = 6;
             e.stopPropagation();
             $('#front-content').css({
-              'background-image': 'url(rimages/head/construct.jpg)',
+              'background-image': 'url(rimages/head/esports.png)',
                 'background-size': 'contain'});
           } else  if ($(e.target).is('#drop-menu-3'))  {
             $('#subtitle-content-container div').css({'display':'none'});
@@ -449,18 +449,18 @@ function createText() {
 //Links that open onClick Robot face in a new tab
     $('#front-content').click(function() {
       if (link == 1) {
-        window.open('https://github.com/andrei-pascu' , '_blank')
+        window.open('https://www.linkedin.com/in/andrei-cristian-pascu-479284139/' , '_blank')
           .focus();
       } else if (link == 2) {
         window.open ('https://andrei-pascu.github.io/The-Bored-Deer/' , '_blank').focus();
       } else if  (link == 3)  {
-        window.open('https://pascu-esports.herokuapp.com/' , '_blank').focus();
+        window.open('https://andrei-pascu.github.io/Thor-CV/' , '_blank').focus();
       } else if  (link == 4)  {
         // window.open('' , '_blank').focus();
       } else if  (link == 5)  {
         window.open('https://andrei-pascu.github.io/anti-mosquito/' , '_blank').focus();
       } else if  (link == 6)  {
-        window.open('' , '_blank').focus();
+        window.open('https://pascu-esports.herokuapp.com/' , '_blank').focus();
       } else if  (link == 7)  {
         window.open('' , '_blank').focus();
       } else if  (link == 8)  {
