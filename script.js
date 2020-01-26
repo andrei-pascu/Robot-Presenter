@@ -449,7 +449,7 @@ function createText() {
 //Links that open onClick Robot face in a new tab
     $('#front-content').click(function() {
       if (link == 1) {
-        window.open('https://www.linkedin.com/in/andrei-cristian-pascu-479284139/' , '_blank')
+        window.open('https://www.linkedin.com/in/cristian-andrei-pascu-479284139/' , '_blank')
           .focus();
       } else if (link == 2) {
         window.open ('https://andrei-pascu.github.io/The-Bored-Deer/' , '_blank').focus();
