@@ -305,12 +305,16 @@ function createText() {
         } else  if ($(e.target).is('#drop-menu-3') ||
             $(e.target).is('#drop-menu-txt-3'))  {
               $('#subtitle-content-container div').css({'display':'none'});
-              $('#esports').css({'display':'flex'});
+
+              
+              $('#dashboard').css({'display':'flex'});
+
+
               createText();
               link = 3;
               e.stopPropagation();
               $('#front-content').css({
-                'background-image': 'url(rimages/head/thor-cv.png)',
+                'background-image': 'url(rimages/head/dashboard.jpg)',
                 'background-size': 'contain'});
         } else  if ($(e.target).is('#drop-menu-4') ||
             $(e.target).is('#drop-menu-txt-4'))  {
@@ -370,30 +374,30 @@ function createText() {
         setTimeout(function() {
           if ($(e.target).is('#drop-menu-1')) {
             $('#subtitle-content-container div').css({'display':'none'});
-            $('#mosquito').css({'display':'flex'});
+            $('#thor_cv').css({'display':'flex'});
             createText();
             link = 5;
             e.stopPropagation();
             $('#front-content').css({
-              'background-image': 'url(rimages/head/mosq.png)',
+              'background-image': 'url(rimages/head/thor-cv.png)',
                 'background-size': 'contain'});
           } else  if ($(e.target).is('#drop-menu-2')) {
             $('#subtitle-content-container div').css({'display':'none'});
-            $('#esportActual').css({'display':'flex'});
+            $('#mosquito').css({'display':'flex'});
             createText();
             link = 6;
             e.stopPropagation();
             $('#front-content').css({
-              'background-image': 'url(rimages/head/esports.png)',
+              'background-image': 'url(rimages/head/mosq.png)',
                 'background-size': 'contain'});
           } else  if ($(e.target).is('#drop-menu-3'))  {
             $('#subtitle-content-container div').css({'display':'none'});
-            $('#construction').css({'display':'flex'});
+            $('#esportActual').css({'display':'flex'});
             createText();
             link = 7;
             e.stopPropagation();
             $('#front-content').css({
-              'background-image': 'url(rimages/head/construct.jpg)',
+              'background-image': 'url(rimages/head/esports.png)',
                 'background-size': 'contain'});
           } else  if ($(e.target).is('#drop-menu-4'))  {
             currentDrop = 2;
