@@ -454,15 +454,15 @@ function createText() {
       } else if (link == 2) {
         window.open ('https://andrei-pascu.github.io/The-Bored-Deer/' , '_blank').focus();
       } else if  (link == 3)  {
-        window.open('https://andrei-pascu.github.io/Thor-CV/' , '_blank').focus();
+        window.open('https://serverusagedashboard.herokuapp.com/' , '_blank').focus();
       } else if  (link == 4)  {
         // window.open('' , '_blank').focus();
       } else if  (link == 5)  {
-        window.open('https://andrei-pascu.github.io/anti-mosquito/' , '_blank').focus();
+        window.open('https://andrei-pascu.github.io/Thor-CV/' , '_blank').focus();
       } else if  (link == 6)  {
-        window.open('https://pascu-esports.herokuapp.com/' , '_blank').focus();
+        window.open('https://andrei-pascu.github.io/anti-mosquito/' , '_blank').focus();
       } else if  (link == 7)  {
-        window.open('' , '_blank').focus();
+        window.open('https://pascu-esports.herokuapp.com/' , '_blank').focus();
       } else if  (link == 8)  {
         window.open('' , '_blank').focus();
       } else {
